@@ -1,27 +1,29 @@
 #!usr/bin/env ruby
+class FizzBuzz
 
 def divide_by(a,b)
 		a % b == 0
 end
 
-def fizzbuzz(n)
+def define_output(n)
 	
 	if divide_by(n, 15)
-		"fizzbuzz" 
+		n = "fizzbuzz" 
 	elsif 	
 		divide_by(n, 3)
-		"fizz"
+		n = "fizz"
 	elsif 
 		divide_by(n, 5)
-		"buzz"
+		n = "buzz"
 	else 
-	n
-		
+	n	
 	end
 	
 end
 	
 def range
-	(1..100).map {|number| fizzbuzz(number)}
+	(1..100).map {|number| define_output(number)}
 end
-puts range
+
+end
+puts FizzBuzz.new.range
