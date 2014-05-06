@@ -1,3 +1,4 @@
+require 'rspec'
 require './fizzbuzz'
 
 
@@ -24,8 +25,6 @@ describe "FizzBuzz" do
 	it "should return fizzbuzz when passed 15" do
 		expect(fizzbuzz.define_output(15)).to eq("fizzbuzz")
 	end
-
-
 end
 
 
