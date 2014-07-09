@@ -1,4 +1,4 @@
-README.md
+Another fizzbuzz solution.
 
 An introduction to RSpec testing, using the popular 'Fizzbuzz' kata for 
 beginners in Ruby/TDD testing. 
